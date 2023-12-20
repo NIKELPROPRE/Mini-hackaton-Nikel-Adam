@@ -11,10 +11,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-      /* Remove the navbar's default margin-bottom and rounded borders */
       body {
         background-color: grey;
       }
+
+      @media (max-width: 767px) {
+        .navbar-inverse .navbar-collapse,
+        .navbar-inverse .navbar-form {
+          background-color: grey;
+        }
+      }
+
       .navbar {
         margin-bottom: 0;
         border-radius: 0;
@@ -38,7 +45,6 @@
         left: 700px;
       }
 
-      /* Add a gray background color and some padding to the footer */
       footer {
         background-color: brown;
         padding: 25px;
@@ -93,7 +99,6 @@
         color: brown;
       }
 
-      /* Hide the carousel text when the screen is less than 600 pixels wide */
       @media (max-width: 600px) {
         .carousel-caption {
           display: none;
